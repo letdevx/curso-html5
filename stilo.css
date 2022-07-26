@@ -1,7 +1,68 @@
+@charset "UTF-8";
+@font-face{ /* adiciona fonte externa google fontes tem varias fontes legais*/
+  font-family: 'fontlogo';
+  src: url("_fonts/bubblegum-sans-regular.otf");
+}
+
+
+
+
+body{
+  background-color: #dddddd;
+  color: rgba(0,0,0,1);
+}
+
+div#interface{
+  width: 900px;
+  background-color: white;
+  margin: -20px auto 0 auto; /* configura a margem em cima a esquerda em baixo e a direita*/
+  box-shadow: 0px 0px 10px rgba(0,0,0,.5); /* faz sombra em volta de um elemento */ 
+  padding: 10px; /*espaço interno dentro do objeto*/
+}
+
+
+
+
 p{
   text-align: justify;
   text-indent: 50px;
 } 
+
+header#cabecalho img#icone{
+  position: fixed;
+  left: 780px;
+  top: 70px;
+  
+}
+
+header#cabecalho{
+  border-bottom: 1px #606060 solid; /*configura a borda de baixo*/
+  height: 150px;
+  
+}
+
+heade#cabecalho img#logo{
+  position: relative;
+  top: 80px;
+  padding: 0%;
+}
+header#cabecalho h1{
+  font-family: 'fontlogo', sans-serif;
+  font-size: 30px;
+  color: #606060;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.6) ;
+  padding: 0px;
+  margin-bottom: 0px;
+}
+header#cabecalho h2{
+  font-family: arial,sans-serif;
+  color: #88888;
+  font-size: 15pt;
+  padding: 0px;
+  margin-top: 0px;
+
+
+}
 /* Formatação foto com legenda */
 figure.foto-legenda{ 
   position: relative;
@@ -41,7 +102,7 @@ nav#menu ul {
  text-transform: uppercase;
  position: absolute;
  top: -20px;
- left: 300px;
+ left: 500px;
 } 
  
 nav#menu li{
@@ -66,3 +127,26 @@ nav#menu a:hover{
   color: white; 
 } 
 
+section#corpo{
+  display: block;
+  width: 400px;
+  float: left;
+  border-right: 1px solid #606060;
+  padding-right: 20px ;
+}
+
+aside#lateral{
+  display: block;
+  width: 400px;
+  float: right;
+} 
+
+footer#rodape{
+  clear: both; /* limpa as configuraçoes dos dois lados e coloca o conteudo 
+                 fora das divisoes laterais d*/
+  border-top: 1px solid #606060;
+  
+} 
+footer#rodape p{
+  text-align: center;
+}
